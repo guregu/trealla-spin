@@ -1,6 +1,6 @@
 # Trealla for Spin
 
-This is a collection of [http://spin.fermyon.dev](Spin) templates for using the WebAssembly build of Trealla Prolog.
+This is a collection of [Spin](http://spin.fermyon.dev) templates for using the WebAssembly build of Trealla Prolog.
 
 Currently a work in progress. [See here](https://github.com/guregu/trealla#spin-components) for more info about what's supported.
 
@@ -56,6 +56,9 @@ http_handler(get("/json", _), _, _, 200) :-
 
 ```console
 $ spin up
+Serving http://127.0.0.1:3000
+Available Routes:
+  my-cool-project: http://127.0.0.1:3000 (wildcard)
 ```
 
 #### Deploy it
@@ -74,4 +77,3 @@ You can also [create OCI images](https://developer.fermyon.com/spin/spin-oci).
 - Supporting more Spin components like Redis and SQL.
 - Considering stealing the HTTP library's syntax from Scryer Prolog
 - Porting [php (Prolog Home Page)](http://github.com/guregu/php) from CGI to Spin components.
-
