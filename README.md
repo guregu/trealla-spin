@@ -61,6 +61,7 @@ $ spin up
 #### Deploy it
 
 The easiest way is to use [Fermyon Cloud](http://cloud.fermyon.com).
+Note that Fermyon Cloud doesn't support key-value stores yet, so the default visitor counter won't work.
 
 ```console
 $ spin deploy
