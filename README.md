@@ -88,36 +88,36 @@ You can also [create OCI images](https://developer.fermyon.com/spin/spin-oci), a
 
 ## Spin library
 
-```prolog
-% library(spin)
+```bash
+# library(spin)
 
-% response handler
+# response handler
 http_handler/4 (+spec,+list,+body,-integer) [multifile]
-% request info
+# request info
 current_http_uri/1      (?string)
 current_http_method/1   (?string)
 current_http_body/1     (?string)
 current_http_param/2
-current_http_header/2   (?string,?string) % name,value
-% response i/o
-http_header_set/2       (+string,+string) % name,value
+current_http_header/2   (?string,?string) # name,value
+# response i/o
+http_header_set/2       (+string,+string) # name,value
 http_body_output/1      (-stream)
-html_content/0  % sets mime header
+html_content/0  # sets mime header
 html_content/1          (+string)
 text_content/0
 text_content/1          (+string)
 prolog_content/0
 prolog_content/1        (+term)
-% key-value store
+# key-value store
 store_open/1            (-handle)
 store_open/2            (+atom,-handle)
 store_close/1           (+handle)
-store_get/3             (+handle,?term,?term) % key,value
-store_exists/2          (+handle,+term) % key
-store_keys/2            (+handle,-list) % all keys 
-store_set/3             (+handle,+term,+term) % key,value
-store_delete/2          (+handle,+term) % key
-% outbound http
+store_get/3             (+handle,?term,?term) # key,value
+store_exists/2          (+handle,+term) # key
+store_keys/2            (+handle,-list) # all keys 
+store_set/3             (+handle,+term,+term) # key,value
+store_delete/2          (+handle,+term) # key
+# outbound http
 http_fetch/3    (+string,-body,+options)
 ```
 
