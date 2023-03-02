@@ -64,13 +64,13 @@ Available Routes:
 #### Deploy it
 
 The easiest way is to use [Fermyon Cloud](http://cloud.fermyon.com).
-Note that Fermyon Cloud doesn't support key-value stores yet, so the default visitor counter won't work.
+Note that Fermyon Cloud doesn't support key-value stores yet, so the default visitor counter example won't work.
 
 ```console
 $ spin deploy
 ```
 
-You can also [create OCI images](https://developer.fermyon.com/spin/spin-oci).
+You can also [create OCI images](https://developer.fermyon.com/spin/spin-oci), and [Fermyon Platform](https://www.fermyon.dev) is a self-hosted platform for running Spin.
 
 ## What's next?
 
